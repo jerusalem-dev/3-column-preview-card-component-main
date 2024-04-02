@@ -1,0 +1,143 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.9375rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5;
+
+  padding-block: 3rem 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+:root {
+  --ff-primary: "Big Shoulders Display", sans-serif;
+
+  --clr-neutral: hsl(0, 0%, 95%);
+}
+
+/* Typography */
+
+.preview-card-3-col__title {
+  font-family: var(--ff-primary);
+  font-size: 3em;
+  color: var(--clr-neutral);
+  text-transform: uppercase;
+
+  margin-block: 0.5em;
+}
+
+.attribution {
+  font-size: 0.7rem;
+  color: hsl(0, 0%, 0%);
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Layout */
+
+.grid-contain {
+  display: grid;
+  align-items: center;
+}
+
+.grid-contain--2-row {
+  grid-template-rows: 1fr auto;
+  gap: 3rem;
+}
+
+.grid-contain--3-row {
+  grid-template-rows: repeat(3, auto);
+}
+
+/* Component */
+
+.preview-card-3-col {
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  overflow: clip;
+}
+
+.preview-card-3-col__column {
+  --base-unit: 3rem;
+
+  padding: calc(var(--base-unit) - 0.25rem);
+}
+
+.preview-card-3-col__column--sedans {
+  --clr-primary: hsl(31, 77%, 52%);
+
+  background-color: var(--clr-primary);
+}
+
+.preview-card-3-col__column--suvs {
+  --clr-primary: hsl(184, 100%, 22%);
+
+  background-color: var(--clr-primary);
+}
+
+.preview-card-3-col__column--luxury {
+  --clr-primary: hsl(179, 100%, 13%);
+
+  background-color: var(--clr-primary);
+}
+
+.preview-card-3-col__link {
+  text-decoration: none;
+  color: var(--clr-primary);
+
+  width: fit-content;
+  background-color: var(--clr-neutral);
+  border: 2px solid var(--clr-neutral);
+  border-radius: var(--base-unit);
+
+  margin-block: var(--base-unit) 0;
+  padding: calc(var(--base-unit) * 0.1) calc(var(--base-unit) * 0.5);
+}
+
+.preview-card-3-col__link:hover,
+.preview-card-3-col__link:focus {
+  color: var(--clr-neutral);
+  background-color: var(--clr-primary);
+}
+
+@media (min-width: 50em) {
+  .grid-contain--3-col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

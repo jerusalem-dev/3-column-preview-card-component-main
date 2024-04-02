@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | 3-column preview card component</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="grid-contain grid-contain--2-row">
+    <main>
+      <div class="preview-card-3-col . grid-contain grid-contain--3-col">
+        <div
+          class="preview-card-3-col__column preview-card-3-col__column--sedans"
+        >
+          <div class="preview-card-3-col__img-contain">
+            <img
+              src="./images/icon-sedans.svg"
+              alt=""
+              class="preview-card-3-col__img"
+            />
+          </div>
+          <!-- closing tag .preview-card-3-col__img-contain -->
+          <div
+            class="preview-card-3-col__text-contain grid-contain grid-contain--3-row"
+          >
+            <h1 class="preview-card-3-col__title">Sedans</h1>
+            <p class="preview-card-3-col__description">
+              Choose a sedan for its affordability and excellent fuel economy.
+              Ideal for cruising in the city or on your next road trip.
+            </p>
+            <a href="#" class="preview-card-3-col__link">Learn More</a>
+          </div>
+          <!-- closing tag .preview-card-3-col__text-contain -->
+        </div>
+        <!-- closing tag .preview-card-3-col__column--sedans -->
+
+        <div
+          class="preview-card-3-col__column preview-card-3-col__column--suvs"
+        >
+          <div class="preview-card-3-col__img-contain">
+            <img
+              src="./images/icon-suvs.svg"
+              alt=""
+              class="preview-card-3-col__img"
+            />
+          </div>
+          <!-- closing tag .preview-card-3-col__img -->
+          <div
+            class="preview-card-3-col__text-contain grid-contain grid-contain--3-row"
+          >
+            <h2 class="preview-card-3-col__title">SUVs</h2>
+            <p class="preview-card-3-col__description">
+              Take an SUV for its spacious interior, power, and versatility.
+              Perfect for your next family vacation and off-road adventures.
+            </p>
+            <a href="#" class="preview-card-3-col__link">Learn More</a>
+          </div>
+          <!-- closing tag .preview-card-3-col__text-contain -->
+        </div>
+        <!-- closing tag .preview-card-3-col__column--suvs -->
+
+        <div
+          class="preview-card-3-col__column preview-card-3-col__column--luxury"
+        >
+          <div class="preview-card-3-col__img-contain">
+            <img
+              src="./images/icon-luxury.svg"
+              alt=""
+              class="preview-card-3-col__img"
+            />
+          </div>
+          <!-- closing tag .preview-card-3-col__img-contain -->
+          <div
+            class="preview-card-3-col__text-contain grid-contain grid-contain--3-row"
+          >
+            <h2 class="preview-card-3-col__title">Luxury</h2>
+            <p class="preview-card-3-col__description">
+              Cruise in the best car brands without the bloated prices. Enjoy
+              the enhanced comfort of a luxury rental and arrive in style.
+            </p>
+            <a href="#" class="preview-card-3-col__link">Learn More</a>
+          </div>
+          <!--closing tag .preview-card-3-col__text-contain -->
+        </div>
+        <!-- closing tag .preview-card-3-col__column--luxury-->
+      </div>
+      <!-- closing tag .preview-card-3-col -->
+    </main>
+    <footer>
+      <div class="attribution">
+        <p class="attribution__text">
+          Challenge by
+          <a
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            class="attribution__link"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="#" class="attribution__link">Jerusalem Uzziah</a>.
+        </p>
+      </div>
+      <!-- closing tag .attribution-->
+    </footer>
+  </body>
+</html>
